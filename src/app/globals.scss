@@ -1,0 +1,31 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+html,
+body {
+	max-width: 100vw;
+	overflow-x: hidden;
+	font-size: 1.1rem;
+	font-weight: 300;
+	line-height: 1.5;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	font-family: (var(--var-poppins));
+}
+
+body {
+	background-repeat: no-repeat;
+	background-color: #ff99d3;
+	background-image: radial-gradient(
+			at 77% 88%,
+			hsla(138, 70%, 76%, 1) 0px,
+			transparent 50%
+		),
+		radial-gradient(at 53% 85%, hsla(349, 60%, 72%, 1) 0px, transparent 50%),
+		radial-gradient(at 94% 15%, hsla(187, 67%, 60%, 1) 0px, transparent 50%),
+		radial-gradient(at 91% 41%, hsla(101, 70%, 76%, 1) 0px, transparent 50%);
+}

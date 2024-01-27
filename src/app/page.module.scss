@@ -1,0 +1,28 @@
+.main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 6rem;
+	text-align: center;
+	flex-grow: 1;
+	user-select: none;
+
+	h1 {
+		font-size: clamp(50px, 10vw, 180px);
+		color: rgba(0, 0, 0, 0.25);
+		text-shadow: 2px 4px 0 rgba(255, 0, 0, 0.25);
+	}
+}
+
+@media screen and (max-width: 1360px) {
+	.main {
+		padding: 0;
+	}
+}
+
+@media screen and (max-width: 360px) {
+	.main {
+		padding: 0 1rem;
+	}
+}

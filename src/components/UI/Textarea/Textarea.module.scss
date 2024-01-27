@@ -1,0 +1,45 @@
+.boxTextarea {
+	display: flex;
+	position: relative;
+	width: 100%;
+	margin-bottom: 1rem;
+
+	.textarea {
+		width: 100%;
+		border-radius: 0.5rem;
+		padding: 0.6rem 2.8rem 0.5rem 0.8rem;
+		font-size: 0.8rem;
+		background-color: transparent;
+		border: 2px solid rgba(26, 25, 25, 0.6);
+		outline: none;
+		resize: none;
+		font-family: Arial, Helvetica, sans-serif;
+
+		&:hover {
+			border: 2px solid #1a1919;
+		}
+
+		&:focus {
+			outline: none;
+			background: #fff;
+			border: 2px solid #1a1919;
+		}
+
+		&.error {
+			border: 2px solid rgba(247, 13, 26, 0.8);
+			outline: 3px solid rgba(247, 13, 26, 0.2);
+			background: rgba(247, 13, 26, 0.2);
+
+			&:focus {
+				background: #fff;
+			}
+		}
+	}
+
+	.rules {
+		top: 0.5rem;
+		right: 0.6rem;
+		font-size: 0.6rem;
+		position: absolute;
+	}
+}
